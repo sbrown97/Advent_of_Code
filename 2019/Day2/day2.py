@@ -24,33 +24,49 @@ def part1(data):
         return: value in position 0"""
 
     # restore gravity assist
-    data[1] = 12
-    data[2] = 2
+    code = data.copy()
+    code[1] = 12
+    code[2] = 2
     
-    for i in range(0,len(data),4):
-        #print('data[i:i+4]: ', data[i:i+4])
-        opcode = data[i]
+    return intcode(code)
+
+def intcode(data):
+
+    code = data.copy()
+    
+    for i in range(0,len(code),4):
+        opcode = code[i]
         if opcode == 99:
             break
         else:
-            idx1 = data[i+1]
-            idx2 = data[i+2]
-            term1 = data[idx1]
-            term2 = data[idx2]
-            pos = data[i+3]
+            idx1 = code[i+1]
+            idx2 = code[i+2]
+            term1 = code[idx1]
+            term2 = code[idx2]
+            pos = code[i+3]
             if opcode == 1:
-                data[pos] = term1 + term2
+                code[pos] = term1 + term2
             elif opcode == 2:   
-                data[pos] = term1 * term2
+                code[pos] = term1 * term2
 
-        #print(' opcode: ', opcode, ' term1: ', term1, ' term2: ', term2,' pos: ', pos, ' value: ',data[pos], data[i:i+4])
-        
+    return code[0]
 
-    return data[0]
 
 def part2(data):
 
-    return 
+    for noun in range(100):
+        for verb in range(100):
+            code = data.copy()
+
+            code[1] = noun
+            code[2] = verb
+        
+            output = intcode(code)
+
+            if output == 19690720:
+                answer = 100 * noun + verb
+                print(answer)
+                return
 
 
 if __name__ == "__main__":
