@@ -37,6 +37,7 @@ def executeLoop(amps,sequence,input,signal_only=False):
 def part1(data):
 
     max_output = 0
+    max_sequence = []
     amps = [Intcoder(data) for i in range(5)]
     
     for sequence in permutations([0,1,2,3,4]):
@@ -46,15 +47,17 @@ def part1(data):
 
         output = executeLoop(amps,sequence,0)
         if output > max_output:
+            max_sequence = sequence
             max_output = output
 
-    print('Part 1: ',max_output)
+    print('Part 1: ',max_output, ' sequence: ', max_sequence)
 
     return
 
 def part2(data):
 
     max_output = 0
+    max_sequence = []
     amps = [Intcoder(data) for i in range(5)]
 
     for sequence in permutations([5,6,7,8,9]):
@@ -68,9 +71,10 @@ def part2(data):
             output = executeLoop(amps,sequence,output,signal_only=True)
 
         if output > max_output:
+            max_sequence = sequence
             max_output = output
 
-    print("Part 2: ",max_output)
+    print("Part 2: ",max_output, ' sequence: ', max_sequence)
 
     return 
 
