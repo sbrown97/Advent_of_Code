@@ -99,7 +99,7 @@ class Intcoder():
                 if self.program[addresses[0]] == self.program[addresses[1]]:
                     self.program[addresses[2]] = 1
                 else:
-                    self.program[addresses[2]] = 1
+                    self.program[addresses[2]] = 0
                 self.pointer += self.num_params[opcode] + 1
 
             elif opcode == 9: # update relative base
