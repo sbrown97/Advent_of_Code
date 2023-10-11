@@ -3,7 +3,6 @@ import pandas as pd
 import os
 import argparse
 import math
-from itertools import product
 
 def computePower(x,y,serial_number):
     """
