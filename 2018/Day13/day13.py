@@ -22,11 +22,6 @@ class Cart:
         return(self.y,self.x)
     
 
-    def setPosition(self,x,y):
-        self.x = x
-        self.y = y
-
-
     def turn(self,direction):
         
         # update facing value
@@ -90,7 +85,6 @@ def parse_input(path):
             l = l.replace('\n','')
             row = [x for x in l]
 
-            # TODO: make sure it works if multiple carts in a row
             if l.find('>') >= 0: # right facing cart
                 matches = [x.span()[0] for x in re.finditer('>',l)]
                 for x in matches:
@@ -151,8 +145,8 @@ def part1(map,carts):
                 break
 
 
-
-    print("Part1: {c}".format(c=coord_count.most_common(1)[0]))
+    (y,x) = coord_count.most_common(1)[0][0]
+    print("Part1: {c}".format(c=(x,y)))
 
     return
 
