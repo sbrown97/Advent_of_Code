@@ -1,5 +1,5 @@
 Day 4
-- Dificulty: 
+- Dificulty: Easy
 - Description: 
     - part 1: check string for repeated words
     - part 2: check string for anagrams
@@ -15,7 +15,7 @@ Day 10
 - Notes: it took me way too long to get part 1, not because it was hard, but because I was trying to remember the most efficient slicing methods. part 2 was a bit tedious but not crazy. interesting to learn a bit more about hashing 
 
 Day 16
-- Dificulty:
-- Description: 
-- Coding Topic(s):
+- Dificulty: Hard/Challenge
+- Description: part 1 is a simple list shuffling game but part 2 is a major scalability challenge that I haven't figured out
+- Coding Topic(s): indexing, find index of a value in a list/string, scalability
 - Notes: 
