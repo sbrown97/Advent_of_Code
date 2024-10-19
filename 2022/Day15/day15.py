@@ -109,7 +109,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='')
 
-    parser.add_argument('--input_dir', default=os.path.join(os.curdir,'2022\Day15'), type=str)
+    parser.add_argument('--input_dir', default=os.path.join(os.curdir,'2022\\Day15'), type=str)
     parser.add_argument('--file', default='test.txt',type=str)
     parser.add_argument('--row',default=10,type=int)
     parser.add_argument('--max_coord',default=20,type=int)

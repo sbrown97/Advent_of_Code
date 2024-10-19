@@ -83,8 +83,8 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='')
 
-    parser.add_argument('--input_dir', default=os.path.join(os.curdir,'2019\Day7'), type=str, help=f'''''')
-    parser.add_argument('--file', default='input.txt',type=str, help=f'''''')
+    parser.add_argument('--input_dir', default=os.path.join(os.curdir,'2019\\Day7'), type=str )
+    parser.add_argument('--file', default='input.txt',type=str )
     #TODO: why doesn't test 4 work?
     
     args = parser.parse_args()

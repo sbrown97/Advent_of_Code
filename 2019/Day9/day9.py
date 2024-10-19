@@ -186,8 +186,8 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='')
 
-    parser.add_argument('--input_dir', default=os.path.join(os.curdir,'2019\Day9'), type=str, help=f'''''')
-    parser.add_argument('--file', default='input.txt',type=str, help=f'''''')
+    parser.add_argument('--input_dir', default=os.path.join(os.curdir,'2019\\Day9'), type=str )
+    parser.add_argument('--file', default='input.txt',type=str )
     parser.add_argument('--input', default=1, type=int,help=f'''''')
 
     args = parser.parse_args()

@@ -60,6 +60,6 @@ class Day2Solver():
 
 
 if __name__ == "__main__":
-    solver = Day2Solver(os.path.join(os.curdir,'2019\Day2\input.txt'))
+    solver = Day2Solver(os.path.join(os.curdir,'2019\\Day2\\input.txt'))
     print('The solution to part 1 is', solver.solve_part1())
     print('The solution to part 2 is', solver.solve_part2())

@@ -63,8 +63,8 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='')
 
-    parser.add_argument('--input_dir', default=os.path.join(os.curdir,'2019\Day8'), type=str, help=f'''''')
-    parser.add_argument('--file', default='test2.txt',type=str, help=f'''''')
+    parser.add_argument('--input_dir', default=os.path.join(os.curdir,'2019\\Day8'), type=str )
+    parser.add_argument('--file', default='test2.txt',type=str )
     parser.add_argument('--width', default=2, type=int)
     parser.add_argument('--height', default=2, type=int)
 
