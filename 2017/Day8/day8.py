@@ -4,14 +4,14 @@ import operator
 from collections import defaultdict
 
 ops = {
-    '>': lambda a,b: operator.gt(a,b),
-    '>=': lambda a,b: operator.ge(a,b),
-    '<': lambda a,b: operator.lt(a,b),
-    '<=': lambda a,b: operator.le(a,b),
-    '==': lambda a,b: operator.eq(a,b),
-    '!=': lambda a,b: operator.ne(a,b),
-    'inc': lambda a,b: operator.add(a,b),
-    'dec': lambda a,b: operator.sub(a,b)
+    '>': operator.gt,
+    '>=': operator.ge,
+    '<': operator.lt,
+    '<=': operator.le,
+    '==': operator.eq,
+    '!=': operator.ne,
+    'inc': operator.add,
+    'dec': operator.sub
 }
 
 def parse_input(path):
