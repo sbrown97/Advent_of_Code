@@ -1,0 +1,5 @@
+concepts
+- discrete event sim
+- state variables
+- order of evaluation
+- stopping conditions
