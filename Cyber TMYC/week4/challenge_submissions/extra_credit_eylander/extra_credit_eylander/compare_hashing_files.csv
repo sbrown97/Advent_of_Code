@@ -1,0 +1,7 @@
+method,percent_dif %
+SHA-1,92.5
+SHA-256,93.8
+SHA-512,90.6
+BLAKE2b,94.5
+MD5,96.9
+custom,100.0
